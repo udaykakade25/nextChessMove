@@ -10,8 +10,8 @@ const VALID_PIECES = ["king", "queen", "rook", "bishop", "knight", "pawn"];
 function getPieceImagePath(piece: string | undefined, color: "white" | "black"): string {
   const p = (piece || "pawn").toLowerCase();
   const safePiece = VALID_PIECES.includes(p) ? p : "pawn";
-  if (safePiece === "king") return `/images/${color}-king.png`;
-  return `/images/${safePiece}-${color}.png`;
+  if (safePiece === "king") return `/${color}-king.png`;
+  return `/${safePiece}-${color}.png`;
 }
 
 const MOVE_PATTERN = /\b([KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](?:=[QRBN])?[+#]?|O-O(?:-O)?)\b/g;
@@ -121,7 +121,7 @@ function NextChessMove() {
             <div className="explanation-section">
               <div className="explanation-header">
                 <div className="explanation-icon">
-                  <img src="/images/star-analysis.png" alt="analysis" className="explanation-icon-img" />
+                  <img src="/star-analysis.png" alt="analysis" className="explanation-icon-img" />
                 </div>
                 <span className="explanation-title">Analysis</span>
               </div>
@@ -143,9 +143,9 @@ function NextChessMove() {
       <div className="result-card waiting-card">
         <div className="card-glow" />
         <div className="waiting-pieces">
-          <div className="floating-piece p1"><img src="/images/white-king.png" alt="white king" /></div>
-          <div className="floating-piece p2"><img src="/images/queen-black.png" alt="black queen" /></div>
-          <div className="floating-piece p3"><img src="/images/knight-white.png" alt="white knight" /></div>
+          <div className="floating-piece p1"><img src="/white-king.png" alt="white king" /></div>
+          <div className="floating-piece p2"><img src="/queen-black.png" alt="black queen" /></div>
+          <div className="floating-piece p3"><img src="/knight-white.png" alt="white knight" /></div>
         </div>
         <div className="waiting-content">
           <h2 className="waiting-title">Chess Move Analyzer</h2>
