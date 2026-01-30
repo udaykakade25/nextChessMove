@@ -571,8 +571,8 @@ packages:
   '@open-draft/until@2.1.0':
     resolution: {integrity: sha512-U69T3ItWHvLwGg5eJ0n3I62nWuE6ilHlmz7zM0npLBRvPRd7e6NYmg54vvRtP5mZG7kZqZCFVdsTWo7BPtBujg==}
 
-  '@posthog/core@1.17.0':
-    resolution: {integrity: sha512-8pDNL+/u9ojzXloA5wILVDXBCV5daJ7w2ipCALQlEEZmL752cCKhRpbyiHn3tjKXh3Hy6aOboJneYa1JdlVHrQ==}
+  '@posthog/core@1.15.0':
+    resolution: {integrity: sha512-n2/Yy0+qc8xhmlcOFiYqTcGHBZuuaQjVolfFXk7yTCynzdMe8Fx1zYvPPUrbdQK5tWwXyilkzybpqhK6I7aV4Q==}
 
   '@radix-ui/number@1.1.1':
     resolution: {integrity: sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g==}
@@ -2624,8 +2624,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-node@5.24.7:
-    resolution: {integrity: sha512-IJ0Zj+v+eg/JQMZ75n0Hcp4NzuQzWcZjqFjcUQs6RhW2l5FiQIq09sKJMleXX33hYxD6sfjFsDTqugJlgeAohg==}
+  posthog-node@5.24.5:
+    resolution: {integrity: sha512-FCo0k7OJPYohXIVD2yLuyHSm7nGN+kHIGLnOalDIZYhhsojy9XQXADqq6i+3emcr8wz6Vc0n4IkmLkCFa0Uoyw==}
     engines: {node: ^20.20.0 || >=22.22.0}
 
   powershell-utils@0.1.0:
@@ -2735,8 +2735,8 @@ packages:
       '@types/react':
         optional: true
 
-  react-resizable-panels@4.5.5:
-    resolution: {integrity: sha512-C1N+mcHF5lOkELEx8QpFsiHCibOCu82LVqULp2q00/88Mcofqp1oy4tZv0H4eArzWJsCo6RZ0jeTb0/4tpVlNg==}
+  react-resizable-panels@4.5.4:
+    resolution: {integrity: sha512-zK+Tz+73MBZKDtBUUcKjezaq+in8K10TJ8+slH/LNza5IL2CRFMKm0GbKyMPAGDPKY1x8G7sWx3Wu9inFRZGFA==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
@@ -4053,7 +4053,7 @@ snapshots:
 
   '@open-draft/until@2.1.0': {}
 
-  '@posthog/core@1.17.0':
+  '@posthog/core@1.15.0':
     dependencies:
       cross-spawn: 7.0.6
 
@@ -5038,7 +5038,7 @@ snapshots:
       nuqs: 2.8.6(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
-      react-resizable-panels: 4.5.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react-resizable-panels: 4.5.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       shadcn: 3.7.0(@types/node@25.1.0)(hono@4.11.7)(typescript@5.9.3)
       shiki: 3.21.0
       skybridge: 0.27.1(@modelcontextprotocol/sdk@1.25.3(hono@4.11.7)(zod@4.3.6))(@types/node@25.1.0)(@types/react@19.2.10)(nodemon@3.1.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tsx@4.21.0)(use-sync-external-store@1.6.0(react@19.2.4))
@@ -6440,9 +6440,9 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-node@5.24.7:
+  posthog-node@5.24.5:
     dependencies:
-      '@posthog/core': 1.17.0
+      '@posthog/core': 1.15.0
 
   powershell-utils@0.1.0: {}
 
@@ -6565,7 +6565,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.10
 
-  react-resizable-panels@4.5.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  react-resizable-panels@4.5.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
@@ -6874,7 +6874,7 @@ snapshots:
       handlebars: 4.7.8
       ink: 6.6.0(@types/react@19.2.10)(react@19.2.4)
       nodemon: 3.1.11
-      posthog-node: 5.24.7
+      posthog-node: 5.24.5
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
       superjson: 2.2.6
