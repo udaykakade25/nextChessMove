@@ -1,7 +1,9 @@
 import "@/index.css";
 
+import { useEffect } from "react";
 import { mountWidget } from "skybridge/web";
 import { useToolInfo } from "../helpers";
+import chessBg from "../../chess-background.jpg";
 
 const VALID_PIECES = ["king", "queen", "rook", "bishop", "knight", "pawn"];
 
@@ -23,6 +25,13 @@ function highlightMoves(text: string) {
 
 function NextChessMove() {
   const { output, input } = useToolInfo<"next-chess-move">();
+
+  useEffect(() => {
+    document.body.style.background = `linear-gradient(rgba(10, 10, 18, 0.75), rgba(10, 10, 18, 0.75)), url(${chessBg})`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundAttachment = "fixed";
+  }, []);
 
   // Show result if we have a move
   if (output?.hasMove && output.piece && output.from && output.to) {
